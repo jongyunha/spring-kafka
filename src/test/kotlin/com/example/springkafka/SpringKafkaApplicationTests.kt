@@ -9,5 +9,4 @@ class SpringKafkaApplicationTests {
     @Test
     fun contextLoads() {
     }
-
 }
