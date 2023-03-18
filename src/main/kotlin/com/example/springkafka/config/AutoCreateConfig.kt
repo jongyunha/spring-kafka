@@ -14,7 +14,7 @@ class AutoCreateConfig {
     fun libraryEvents(): NewTopic {
         return TopicBuilder.name("library-events")
             .partitions(3)
-            .replicas( 1 )
+            .replicas(1)
             .build()
     }
 }
