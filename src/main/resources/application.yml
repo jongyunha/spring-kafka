@@ -9,3 +9,8 @@ spring:
     admin:
       properties:
         bootstrap-servers: localhost:9092
+    consumer:
+      bootstrap-servers: localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: library-events-consumer-group
