@@ -67,7 +67,7 @@ class LibraryEventProducer(
     }
 
     private fun buildProducerRecord(key: Int, value: String): ProducerRecord<Int, String> {
-        return ProducerRecord( TOPIC, null, key, value )
+        return ProducerRecord(TOPIC, null, key, value)
     }
 
     private fun handleSuccess(key: Int, value: String, recordMetadata: SendResult<Int, String>?) {
